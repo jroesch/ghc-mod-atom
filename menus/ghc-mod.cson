@@ -1,0 +1,16 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  '.overlayer':
+      'Enable ghc-mod': 'ghc-mod:toggle'
+
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'ghc-mod'
+      'submenu': [
+        { 'label': 'Toggle', 'command': 'ghc-mod:toggle' }
+      ]
+    ]
+  }
+]

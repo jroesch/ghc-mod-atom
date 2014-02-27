@@ -1,0 +1,15 @@
+{
+  "name": "ghc-mod",
+  "main": "./lib/ghc-mod",
+  "version": "0.0.0",
+  "private": true,
+  "description": "A short description of your package",
+  "activationEvents": ["ghc-mod:toggle"],
+  "repository": "https://github.com/atom/ghc-mod",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+  }
+}
