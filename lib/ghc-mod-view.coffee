@@ -7,11 +7,6 @@ class GhcModView extends View
       @div "The GhcMod package is Alive! It's ALIVE!", class: "message"
 
   initialize: (serializeState) ->
-    atom.workspaceView.command "ghc-mod:toggle", => @toggle()
-    foo = this
-    atom.workspaceView.eachEditorView (editorView) =>
-      editorView.command "ghc-mod:toggle", (e) =>
-        console.log("FOOBAR")
 
   # Returns an object that can be retrieved when package is activated
   serialize: ->
@@ -20,8 +15,10 @@ class GhcModView extends View
   destroy: ->
     @detach()
 
-  toggle: ->
+  toggle: (text) ->
     console.log "GhcModView was toggled!"
+    console.log text
+
     if @hasParent()
       @detach()
     else
